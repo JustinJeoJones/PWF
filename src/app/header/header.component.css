@@ -1,0 +1,12 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 2px solid;
+  background-color: gold;
+  padding-top: 5px;
+}
+
+a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
