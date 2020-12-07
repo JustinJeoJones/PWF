@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 50%;
+  border-radius: 25px;
+}
+p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 25%;
+  }
+}
