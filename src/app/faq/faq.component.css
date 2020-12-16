@@ -1,8 +1,13 @@
 ul {
   list-style-type: disc;
+  display: flex;
+  flex-direction: column;
 }
 li {
   display: list-item;
+}
+p {
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,9 +1,9 @@
 div {
-  position: absolute;
+  position: relative;
   width: 100%;
   bottom: 0px;
   border-top: black 1px solid;
-  background-color: gold;
+  background-color: #df9035;
   padding-top: 5px;
 }
 

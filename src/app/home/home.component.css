@@ -9,6 +9,21 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+p {
+  text-align: center;
+}
+img {
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+div {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
 
 @media only screen and (min-width: 768px) {
+  div {
+  }
 }
