@@ -9,6 +9,10 @@
   margin-bottom: 10px;
 }
 
+.desktop {
+  display: none;
+}
+
 .header-left {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,12 @@ a:active {
   .head {
     flex-direction: row;
     padding: 10px;
+  }
+  .desktop {
+    display: flex;
+  }
+  .main {
+    display: none;
   }
 
   .header-left {

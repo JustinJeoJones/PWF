@@ -1,4 +1,6 @@
-<div class="head">
+<!--Header main-->
+<div  class="head main">
+  <div *ngIf="openNav" class="Nav">
     <div class="header-left">
       <a class="link-left" [routerLink]="['/home']">Home</a>
       <a class="link-center" [routerLink]="['/about']">About</a>
@@ -10,3 +12,21 @@
       <a href="">Kickstarter!</a>
     </div>
   </div>
+  <div class="header-nav-open">
+    <p (click)="openNavToggle()">Toggle Menu</p>
+  </div>
+  </div>
+
+<!--Header Desktop-->
+<div  class="head desktop">
+<div class="header-left">
+  <a class="link-left" [routerLink]="['/home']">Home</a>
+  <a class="link-center" [routerLink]="['/about']">About</a>
+  <a class="link-center" [routerLink]="['/rules']">Rules</a>
+  <a class="link-center" [routerLink]="['/faq']">Gameplay FAQ</a>
+  <a class="link-right" [routerLink]="['/contact']">Contact</a>
+</div>
+<div class="header-right">
+  <a href="">Kickstarter!</a>
+</div>
+</div>
