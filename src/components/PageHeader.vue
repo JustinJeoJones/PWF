@@ -26,9 +26,9 @@ function toggleDisplay(): void {
       <router-link class="nav-item nav-link" to="/About">About</router-link>
       <a
         class="nav-item nav-link"
-        href="/public/files/PWF_Rules.pdf"
-        download="PWF_Rules.pdf"
-        >Download Rules</a
+        target="_blank"
+        href="https://docs.google.com/document/d/1RKKp6Gz9UnBn8Rxe7ItwjK645e_UHpY645iOJm72lDo/preview"
+        >Rules</a
       >
       <a class="nav-item nav-link" href="https://www.kickstarter.com"
         >KickStarter</a
