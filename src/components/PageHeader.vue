@@ -1,26 +1,40 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-let display = ref(true);
+import { ref } from "vue";
+let display = ref(false);
 
-function toggleDisplay():void {
-  console.log("hi")
+function toggleDisplay(): void {
   display.value = !display.value;
-  console.log(display);
 }
 </script>
 
 <template>
-  <div class="navbar">
-      <span class="navbar-brand mb-0 h1">PWF</span>
-      <button @click="toggleDisplay" class="navbar-toggler">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-  <div class="row navbar-nav" v-if="display">
+  <div class="nav-bg sticky-top">
+    <div
+      class="navbar navbar-dark"
+      @click="toggleDisplay"
+    >
+    
+      <span class="navbar-brand m-0">
+        <router-link class="nav-item nav-link" to="/">PWF</router-link>
+      </span>
+      <button class="navbar-toggler ">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="row navbar-nav" v-if="display">
       <router-link class="nav-item nav-link" to="/">Home</router-link>
       <router-link class="nav-item nav-link" to="/About">About</router-link>
-      <a class="nav-item nav-link" href="https://www.kickstarter.com">KickStarter</a>
+      <a
+        class="nav-item nav-link"
+        href="/public/files/PWF_Rules.pdf"
+        download="PWF_Rules.pdf"
+        >Download Rules</a
+      >
+      <a class="nav-item nav-link" href="https://www.kickstarter.com"
+        >KickStarter</a
+      >
     </div>
+  </div>
 </template>
 
 <style scoped>
@@ -30,7 +44,11 @@ h1 {
 span {
   color: gold;
 }
-.nav-item{
+.nav-item {
   color: gold;
+}
+.nav-bg {
+  border-bottom: black 1px solid;
+  background-color: rgb(53, 51, 51);
 }
 </style>

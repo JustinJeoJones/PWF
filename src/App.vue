@@ -7,7 +7,7 @@ import 'bootstrap/js/dist/modal'
 
 <template>
   <PageHeader />
-  <div class="container">
+  <div class="container bg-dark">
     <RouterView />
   </div>
   
