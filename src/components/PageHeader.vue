@@ -30,7 +30,7 @@ function toggleDisplay(): void {
         href="https://docs.google.com/document/d/1RKKp6Gz9UnBn8Rxe7ItwjK645e_UHpY645iOJm72lDo/preview"
         >Rules</a
       >
-      <a class="nav-item nav-link" href="https://www.kickstarter.com"
+      <a class="nav-item nav-link" href="https://www.kickstarter.com/projects/pwf/pro-wrestling-factions-pwf"
         >KickStarter</a
       >
     </div>

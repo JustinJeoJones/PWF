@@ -1,4 +1,5 @@
 <script setup lang="ts">
+let Backers:string[] = [];
 </script>
 
 <template>
@@ -17,7 +18,10 @@
       <p>Check out our Kickstarter video here!</p>
     </div>
     <div class="row">
-      <video controls ><source src="../assets/KickstarterVid.mp4"> </video>
+      <video class="col-md-6 offset-md-3" controls ><source src="../assets/KickstarterVid.mp4"> </video>
+    </div>
+    <div>
+      <p>Support us on <a href="https://www.kickstarter.com/projects/pwf/pro-wrestling-factions-pwf">KickStarter</a></p>
     </div>
     <div class="row"><h2>Build your roster!</h2></div>
     <div class="row">
@@ -52,6 +56,13 @@
       <p>Ages: 14+</p>
       <p>Contains small parts</p>
     </div>
+
+    <div class="row"><h2>Special thanks to all of our Backers!</h2></div>
+    <div class="row"><p>Last updated 11/16/2023</p></div>
+
+    <p v-for="b in Backers">
+      {{ b }}
+    </p>
   </main>
 </template>
 
