@@ -22,6 +22,7 @@ let Backers:string[] = [];
     </div>
     <div>
       <p>Support us on <a href="https://www.kickstarter.com/projects/pwf/pro-wrestling-factions-pwf">KickStarter</a></p>
+      <iframe src="https://www.kickstarter.com/projects/pwf/pro-wrestling-factions-pwf/widget/card.html?v=2" width="220" height="420" frameborder="0" scrolling="no"></iframe>
     </div>
     <div class="row"><h2>Build your roster!</h2></div>
     <div class="row">
